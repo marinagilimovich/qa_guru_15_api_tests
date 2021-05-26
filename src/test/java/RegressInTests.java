@@ -17,8 +17,8 @@ public class RegressInTests {
                 .get("/api/unknown/2")
                 .then()
                 .statusCode(200)
-                .body("id", is(2))
-                .body("name", is("fuchsia rose"));
+                .body("data.id", is(2))
+                .body("data.name", is("fuchsia rose"));
     }
 
     @Test
